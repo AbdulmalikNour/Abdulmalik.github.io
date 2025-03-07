@@ -280,23 +280,6 @@ footer a:hover {
         <a href="https://x.com/mlokyy07" target="_blank">X</a>
         <a href="https://www.linkedin.com/in/abdulmalik-nour-a80710319/" target="_blank">LinkedIn</a>
     </footer>
-
-    <script>
-        // Function to trigger animations for sections other than the hero section
-        window.addEventListener('scroll', function() {
-            // Select all sections except the hero section
-            const sections = document.querySelectorAll('.section:not(#hero)');
-
-            sections.forEach(function(section) {
-                const sectionPosition = section.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-
-                // Trigger animation if the section is in the viewport
-                if (sectionPosition < windowHeight - 100 && !section.classList.contains('show')) {
-                    section.classList.add('show');
-                }
-            });
-        });
-    </script>
+    
 </body>
 </html>
